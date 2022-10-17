@@ -28,9 +28,10 @@ public class ArrayMethods {
         for (int i = 0; i <= 10; i++) {
             System.out.print(arr[i] + " ");
         }
-         return arr;
+        return arr;
     }
-    static int[] printArraySecond(int[] arr){
+
+    static int[] printArraySecond(int[] arr) {
         int a = 10;
         for (int i = 0; i < arr.length; i++) {
             arr[i] = a + i;
@@ -42,7 +43,7 @@ public class ArrayMethods {
         return arr;
     }
 
-    static int printMatrix(int[][] matrix){
+    static int printMatrix(int[][] matrix) {
         int m = 0;
         for (int i = 0; i < 4; i++) {
             System.out.println();
@@ -55,43 +56,44 @@ public class ArrayMethods {
         return m;
     }
 
-    static boolean isExistingElement(int[] arr){
-        int z =5;
-        boolean val= false;
-        for(int x : arr){
-            if(x==z){
-                val=true;
+    static boolean isExistingElement(int[] arr) {
+        int z = 5;
+        boolean val = false;
+        for (int x : arr) {
+            if (x == z) {
+                val = true;
                 break;
             }
         }
 
         return val;
     }
-    static  int arraySumElements(int[] array){
-        int sum=0;
-        for(int i=0; i <array.length; i++){
+
+    static int arraySumElements(int[] array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
             sum += array[i];
         }
         return sum;
     }
 
-    static int twoDimensionArray(int[][] arr){
-        int sum=0;
-        for(int i =0; i<arr.length;i++){
-            for(int j =0; j<arr.length; j++){
-                arr[i][j] = (i+1) *(j+1);
+    static int twoDimensionArray(int[][] arr) {
+        int sum = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                arr[i][j] = (i + 1) * (j + 1);
 
             }
         }
-        for(int[] x : arr){
-            for(int y : x){
+        for (int[] x : arr) {
+            for (int y : x) {
                 sum += y;
             }
         }
         return sum;
     }
 
-    static  int matrixSumDiaganal(int[][] array2) {
+    static int matrixSumDiaganal(int[][] array2) {
         int sum1 = 0;
         for (int i = 0; i < array2.length; i++) {
             for (int j = 0; j < array2[i].length; j++) {
@@ -103,11 +105,12 @@ public class ArrayMethods {
         }
         return sum1;
     }
-    static int matrixSumSecondDiaganal(int[][] array3){
-        int sum2=0;
-        for(int i = 0; i<array3.length; i++){
-            for(int j = 0; j<array3[i].length; j++){
-                if((i+j)==array3.length-1){
+
+    static int matrixSumSecondDiaganal(int[][] array3) {
+        int sum2 = 0;
+        for (int i = 0; i < array3.length; i++) {
+            for (int j = 0; j < array3[i].length; j++) {
+                if ((i + j) == array3.length - 1) {
                     sum2 += array3[i][j];
 
                 }
@@ -140,9 +143,9 @@ public class ArrayMethods {
                 {13, 14, 15, 16}};
         System.out.println(matrixSumDiaganal(array2));
         int[][] array3 = {{11, 2, 3, 6},
-                           {5, 6, 8, 8},
-                        {9, 11, 11, 12},
-                      {13, 14, 15, 16}};
+                {5, 6, 8, 8},
+                {9, 11, 11, 12},
+                {13, 14, 15, 16}};
         System.out.println(matrixSumSecondDiaganal(array3));
 
     }

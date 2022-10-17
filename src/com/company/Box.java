@@ -10,13 +10,29 @@ public class Box {
         this.heigth = heigth;
         this.depth = depth;
     }
-    Box(){
-        widht=-1;
-        heigth=-1;
-        depth=-1;
+
+    Box() {
+        widht = -1;
+        heigth = -1;
+        depth = -1;
     }
-    Box(double len){
-        widht=heigth=depth=len;
+
+    Box(double len) {
+        widht = heigth = depth = len;
+    }
+
+    public static void main(String[] args) {
+        Box box = new Box(10, 20, 15);
+        Box box1 = new Box();
+        Box box2 = new Box(7);
+        double vol;
+        vol = box.volume();
+        System.out.println("Volume of box is:" + vol);
+        vol = box1.volume();
+        System.out.println("Volume of box1 is:" + vol);
+        vol = box2.volume();
+        System.out.println("Volume of box2 is:" + vol);
+
     }
 
     double volume() {
@@ -31,20 +47,6 @@ public class Box {
         widht = w;
         heigth = h;
         depth = d;
-
-    }
-
-    public static void main(String[] args) {
-        Box box = new Box(10, 20, 15);
-        Box box1 = new Box();
-        Box box2 = new Box(7);
-        double vol;
-        vol = box.volume();
-        System.out.println("Volume of box is:" + vol);
-        vol = box1.volume();
-        System.out.println("Volume of box1 is:" + vol);
-        vol = box2.volume();
-        System.out.println("Volume of box2 is:" + vol);
 
     }
 

@@ -22,7 +22,7 @@ public class Arrays {
             System.out.print(array1[i] + " ");
         }
 
-      System.out.println();
+        System.out.println();
     }
 
     void printMatrix() {

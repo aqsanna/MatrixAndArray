@@ -1,60 +1,17 @@
 package com.company;
 
 public class Stack {
-    int stck[];
+    int[] stck;
     int tos;
 
     Stack(int n) {
         tos = -1;
         this.stck = new int[n];
     }
-    Stack(){
+
+    Stack() {
         stck = new int[2];
         tos = -1;
-    }
-
-    void push(int item) {
-        if (tos == stck.length - 1)
-            System.out.println("is full");
-        else
-            stck[++tos] = item;
-    }
-
-    int pop() {
-        if (tos < 0) {
-            System.out.println("is empty ");
-            return 0;
-        } else
-            return stck[tos--];
-    }
-
-
-    // FIFO
-    public static class Fifostack {
-        int stack[];
-        int firstNumber;
-        int lastNumber;
-
-        Fifostack(int n) {
-            stack = new int[n];
-            firstNumber = -1;
-            lastNumber = -1;
-        }
-
-        public void push(int item) {
-            if (firstNumber == stack.length - 1) {
-                System.out.println("stack is full");
-            } else
-                stack[++firstNumber] = item;
-        }
-
-        public int pop() {
-            if (lastNumber == firstNumber) {
-                System.out.println("stack is empty");
-                return 0;
-            } else return stack[++lastNumber];
-        }
-
     }
 
     public static void main(String[] args) {
@@ -78,6 +35,49 @@ public class Stack {
         System.out.println(fifostack.pop());
         System.out.println(fifostack.pop());
         System.out.println(fifostack.pop());
+
+    }
+
+    void push(int item) {
+        if (tos == stck.length - 1)
+            System.out.println("is full");
+        else
+            stck[++tos] = item;
+    }
+
+    int pop() {
+        if (tos < 0) {
+            System.out.println("is empty ");
+            return 0;
+        } else
+            return stck[tos--];
+    }
+
+    // FIFO
+    public static class Fifostack {
+        int[] stack;
+        int firstNumber;
+        int lastNumber;
+
+        Fifostack(int n) {
+            stack = new int[n];
+            firstNumber = -1;
+            lastNumber = -1;
+        }
+
+        public void push(int item) {
+            if (firstNumber == stack.length - 1) {
+                System.out.println("stack is full");
+            } else
+                stack[++firstNumber] = item;
+        }
+
+        public int pop() {
+            if (lastNumber == firstNumber) {
+                System.out.println("stack is empty");
+                return 0;
+            } else return stack[++lastNumber];
+        }
 
     }
 
