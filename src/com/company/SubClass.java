@@ -14,6 +14,10 @@ public class SubClass extends BasicClass {
         super.showij();
         System.out.println("k is:" + k);
     }
+//    public void foo(){
+//        System.out.println("Hello from SubClass");
+//
+//    }
     void showij(String msg){
         System.out.println(msg + k);
      }

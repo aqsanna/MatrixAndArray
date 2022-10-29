@@ -16,8 +16,9 @@ public class ArrayListClass {
         cars.set(2,"Mersedes");
         System.out.println(cars.get(2));
         System.out.println(cars);
-//        cars.remove(0);
-//        System.out.println(cars);
+        cars.remove(0);
+        cars.size();
+        System.out.println(cars);
 //        cars.clear();
 //        System.out.println(cars);
         cars.size();
@@ -41,6 +42,7 @@ public class ArrayListClass {
         myNumbers.add(34);
         myNumbers.add(8);
         myNumbers.add(12);
+        myNumbers.get(1);
 
         Collections.sort(myNumbers);  // Sort myNumbers
 
