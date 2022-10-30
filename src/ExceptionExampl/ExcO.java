@@ -1,6 +1,6 @@
 package ExceptionExampl;
 
-public class ЕхсО {
+public class ExcO {
     static void subRoutin() {
         try {
             int d = 0;
