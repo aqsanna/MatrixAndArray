@@ -6,7 +6,7 @@ public class LambdasAsArgumentDemo {
     }
 
     public static void main(String[] args) {
-        String iпStr = "Лямбда - выражения повышают эффе кти вность Java ";
+        String iпStr = "Лямбда - выражения повышают эффективность Java ";
         String outStr;
         System.out.println( "Этo исходная строка : "+ iпStr);
 
